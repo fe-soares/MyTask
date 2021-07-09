@@ -1,0 +1,36 @@
+.login-form {
+    margin-left: 40%;
+    border: 1px solid #d4d4d4;
+    border-radius: 25px;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-login{
+    border: 1px solid #242c37;
+    border-radius: 999px;
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(to left, #955DFF, #6FAAFF);
+    color: #fff;
+}
+
+#titleLogin{
+    text-align: center;
+}
+
+#loginBox{
+    -moz-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
+    -webkit-transition: all ease-in-out 1s;
+    transition: all ease-in-out 1s;
+}
+
+.changeForm{
+    text-align: center;
+    color: cornflowerblue;
+    cursor: pointer;
+}

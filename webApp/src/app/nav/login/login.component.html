@@ -1,0 +1,109 @@
+<div class="container">
+    <div id="login">
+        <div id="loginBox" *ngIf="!isNewUser">
+            <div class="col-lg-5 col-md-5 col-sm-5 login-form p-2">
+                <div id="titleLogin" class="col-lg-12 col-md-12 col-sm-12 ps-3">
+                    <h4>Login</h4>
+                </div>
+                <form novalidate [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="form-horizontal">
+                        <div class="form-group m-3">
+                            <label class="col-md-6 control-label mb-1" for="email">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                E-mail
+                            </label>
+                            <div class="col-md-12">
+                                <input class="form-control" id="email" type="text" placeholder="email (requerido)" formControlName="email" [ngClass]="{'is-invalid': displayMessage.email}"/>
+                                <span class="text-danger" *ngIf="displayMessage.email">
+                                    <p [innerHTML]="displayMessage.email"></p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group m-3">
+                            <label class="col-md-6 control-label mb-1" for="password">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                Senha
+                            </label>
+                            <div class="col-md-12">
+                                <input class="form-control" id="password" type="password" placeholder="senha (requerido)" formControlName="password" [ngClass]="{'is-invalid': displayMessage.password}"/>
+                                <span class="text-danger" *ngIf="displayMessage.password">
+                                    <p [innerHTML]="displayMessage.password"></p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group m-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn btn-login" id="Registrar" type="submit">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-lg-12 col-md-12 col-sm-12 changeForm btn" (click)="changeToNewUser()">
+                    <span>Não possui cadastro? Click e crie um novo</span>
+                </div>
+            </div>
+        </div>
+        <div id="loginBox" *ngIf="isNewUser">
+            <div class="col-lg-5 col-md-5 col-sm-5 login-form p-2">
+                <div id="titleLogin" class="col-lg-12 col-md-12 col-sm-12 ps-3">
+                    <h4>Cadastrar</h4>
+                </div>
+                <form novalidate [formGroup]="registerForm" (ngSubmit)="login()">
+                    <div class="form-horizontal">
+                        <div class="form-group m-3">
+                            <label class="col-md-6 control-label mb-1" for="email">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                E-mail
+                            </label>
+                            <div class="col-md-12">
+                                <input class="form-control" id="email" type="text" placeholder="email (requerido)" formControlName="email" [ngClass]="{'is-invalid': displayMessage.email}"/>
+                                <span class="text-danger" *ngIf="displayMessage.email">
+                                    <p [innerHTML]="displayMessage.email"></p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group m-3">
+                            <label class="col-md-6 control-label mb-1" for="password">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                Senha
+                            </label>
+                            <div class="col-md-12">
+                                <input class="form-control" id="password" type="password" placeholder="senha (requerido)" formControlName="password" [ngClass]="{'is-invalid': displayMessage.password}"/>
+                                <span class="text-danger" *ngIf="displayMessage.password">
+                                    <p [innerHTML]="displayMessage.password"></p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group m-3">
+                            <label class="col-md-6 control-label mb-1" for="ConfirmPassword">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                Confirmar Senha
+                            </label>
+                            <div class="col-md-12">
+                                <input class="form-control" id="ConfirmPassword" type="password" placeholder="senha (requerido)" formControlName="confirmPassword" [ngClass]="{'is-invalid': displayMessage.confirmPassword}"/>
+                                <span class="text-danger" *ngIf="displayMessage.confirmPassword">
+                                    <p [innerHTML]="displayMessage.confirmPassword"></p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group m-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn btn-login" id="Registrar" type="submit">Cadastrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-lg-12 col-md-12 col-sm-12 changeForm btn">
+                    <span (click)="changeLoginUser()">Ja possui cadastro? click e entre</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cadastro">
+
+    </div>
+</div>

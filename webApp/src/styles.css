@@ -1,0 +1,11 @@
+html{
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #955DFF, #6FAAFF);
+    font-family: montserrat;
+}
