@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { TaskDashboardComponent } from "./tasdk-dashboard/task-dashboard.component";
+import { TaskDashboardComponent } from "./task-dashboard/task-dashboard.component";
 import { TaskAppComponent } from "./task.app.component";
 
 const taskRouterConfig: Routes = [

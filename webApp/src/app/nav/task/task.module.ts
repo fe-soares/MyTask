@@ -1,20 +1,28 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { UserPanelComponent } from "../userPanel/uerPanel.component";
-import { TaskDashboardComponent } from "./tasdk-dashboard/task-dashboard.component";
+import { TaskDashboardComponent } from "./task-dashboard/task-dashboard.component";
 import { TaskAppComponent } from "./task.app.component";
 import { TaskRoutingModule } from "./task.route";
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatButtonModule } from '@angular/material/button';
+import { TaskDoComponent } from "./components/task-do/taskDo.component";
+import { TaskDoneComponent } from "./components/task-done/taskDone.component";
+import { TaskToDoComponent } from "./components/task-to-do/taskToDo.component";
 
 @NgModule({
     declarations: [
         TaskAppComponent,
-        TaskDashboardComponent
+        TaskDashboardComponent,
+        TaskDoComponent,
+        TaskDoneComponent,
+        TaskToDoComponent
     ],
     imports: [
         CommonModule,
         TaskRoutingModule,
-        MatTabsModule
+        MatTabsModule,
+        MatButtonModule
     ],
     providers: [
       //  ProdutoService,
