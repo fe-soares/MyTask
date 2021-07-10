@@ -4,6 +4,7 @@ import { UserPanelComponent } from "../userPanel/uerPanel.component";
 import { TaskDashboardComponent } from "./tasdk-dashboard/task-dashboard.component";
 import { TaskAppComponent } from "./task.app.component";
 import { TaskRoutingModule } from "./task.route";
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
     declarations: [
@@ -12,7 +13,8 @@ import { TaskRoutingModule } from "./task.route";
     ],
     imports: [
         CommonModule,
-        TaskRoutingModule
+        TaskRoutingModule,
+        MatTabsModule
     ],
     providers: [
       //  ProdutoService,

@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavegacaoModule } from './nav/nav.module';
 import { UserPanelComponent } from './nav/userPanel/uerPanel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UserPanelComponent } from './nav/userPanel/uerPanel.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NavegacaoModule
+    NavegacaoModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

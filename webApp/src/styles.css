@@ -9,3 +9,5 @@ body{
     background: linear-gradient(to left, #955DFF, #6FAAFF);
     font-family: montserrat;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
