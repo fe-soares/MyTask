@@ -7,4 +7,23 @@
             <button mat-fab color="primary">Plus-Icon</button>
         </div>
     </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 task-box">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 aling-vertical">
+                <div>
+                    <span>Task Title</span>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 aling-vertical">
+                <span>Data Inicio: DD/MM/YY - HH:MM:SS</span>
+                <span>data fim: DD/MM/YY - HH:MM:SS</span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <button mat-fab color="primary">Btn-Play</button>
+                <a [routerLink]="['edit/', 15]" mat-fab color="Accent" class="btn btn-primary">Editar</a>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 background-status">
+            </div>
+        </div>
+    </div>
 </section>
