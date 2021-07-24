@@ -7,7 +7,7 @@
             <button mat-fab color="primary">Plus-Icon</button>
         </div>
     </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 task-box">
+    <div class="col-lg-12 col-md-12 col-sm-12 task-box mt-2 mb-2">
         <div class="row">
             <div class="col-lg-2 col-md-2 col-sm-2 aling-vertical">
                 <div>
@@ -20,7 +20,7 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <button mat-fab color="primary">Btn-Play</button>
-                <a [routerLink]="['edit/', 15]" mat-fab color="Accent" class="btn btn-primary">Editar</a>
+                <a mat-fab color="Accent" class="btn btn-primary" (click)="editTaskDialog()">Editar</a>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 background-status">
             </div>

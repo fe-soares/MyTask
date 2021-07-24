@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './nav/login/login.component';
 import { HomeComponent } from './nav/menu/home.component';
-import { EditTaskComponent } from './nav/task/edit-task/edit-task.component';
+import { EditTaskComponent } from './nav/task/components/partials/edit-task/edit-task.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},

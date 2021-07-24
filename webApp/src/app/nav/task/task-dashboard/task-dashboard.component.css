@@ -5,3 +5,7 @@
 .tasks-box .mat-tab-label-content{
     color: black;
 }
+
+.mat-tab-label{
+    width: 33%;
+}

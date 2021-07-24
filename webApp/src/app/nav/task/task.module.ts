@@ -9,6 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { TaskDoComponent } from "./components/task-do/taskDo.component";
 import { TaskDoneComponent } from "./components/task-done/taskDone.component";
 import { TaskToDoComponent } from "./components/task-to-do/taskToDo.component";
+import { EditTaskComponent } from "./components/partials/edit-task/edit-task.component";
+import { MatDialogModule  } from "@angular/material/dialog";
 
 @NgModule({
     declarations: [
@@ -16,13 +18,15 @@ import { TaskToDoComponent } from "./components/task-to-do/taskToDo.component";
         TaskDashboardComponent,
         TaskDoComponent,
         TaskDoneComponent,
-        TaskToDoComponent
+        TaskToDoComponent,
+        EditTaskComponent
     ],
     imports: [
         CommonModule,
         TaskRoutingModule,
         MatTabsModule,
-        MatButtonModule
+        MatButtonModule,
+        MatDialogModule 
     ],
     providers: [
       //  ProdutoService,

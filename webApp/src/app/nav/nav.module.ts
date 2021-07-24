@@ -6,14 +6,12 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { UserPanelComponent } from "./userPanel/uerPanel.component";
 import { TaskModule } from "./task/task.module";
 import { HomeComponent } from "./menu/home.component";
-import { EditTaskComponent } from "./task/edit-task/edit-task.component";
 
 @NgModule({
     declarations: [
         LoginComponent,
         UserPanelComponent,
-        HomeComponent,
-        EditTaskComponent
+        HomeComponent
     ],
     imports: [
         ReactiveFormsModule,
