@@ -18,11 +18,18 @@
                 <span>Data Inicio: DD/MM/YY - HH:MM:SS</span>
                 <span>data fim: DD/MM/YY - HH:MM:SS</span>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-                <button mat-fab color="primary">Btn-Play</button>
-                <a mat-fab color="Accent" class="btn btn-primary" (click)="editTaskDialog()">Editar</a>
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-5 icon-box aling-vertical">
+                        <i class="fa fa-play cursor-pointer" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 icon-box aling-vertical">
+                        <i class="fa fa-pencil cursor-pointer" (click)="editTaskDialog()" aria-hidden="true"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 background-status">
+            <div class="col-lg-2 col-md-2 col-sm-2 status-style aling-vertical">
+                <span>Em Andamento</span>
             </div>
         </div>
     </div>

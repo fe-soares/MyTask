@@ -9,3 +9,13 @@
 .mat-tab-label{
     width: 33%;
 }
+
+.icon-box{
+    height: 2em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.status-style{
+    font-family: 'Dancing Script', cursive;
+}
