@@ -11,6 +11,9 @@ import { TaskDoneComponent } from "./components/task-done/taskDone.component";
 import { TaskToDoComponent } from "./components/task-to-do/taskToDo.component";
 import { EditTaskComponent } from "./components/partials/edit-task/edit-task.component";
 import { MatDialogModule  } from "@angular/material/dialog";
+import { MatExpansionModule } from '@angular/material/expansion';
+import { NewTaskComponent } from "./components/partials/new-task/new-task.component";
+import { StepTaskComponent } from "./components/partials/formStep/step-task.component";
 
 @NgModule({
     declarations: [
@@ -19,14 +22,17 @@ import { MatDialogModule  } from "@angular/material/dialog";
         TaskDoComponent,
         TaskDoneComponent,
         TaskToDoComponent,
-        EditTaskComponent
+        EditTaskComponent,
+        NewTaskComponent,
+        StepTaskComponent
     ],
     imports: [
         CommonModule,
         TaskRoutingModule,
         MatTabsModule,
         MatButtonModule,
-        MatDialogModule 
+        MatDialogModule,
+        MatExpansionModule
     ],
     providers: [
       //  ProdutoService,

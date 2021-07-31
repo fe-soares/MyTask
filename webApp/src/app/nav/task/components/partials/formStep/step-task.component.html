@@ -1,0 +1,35 @@
+<h2 mat-dialog-title>Adicionar etapa</h2>
+<mat-dialog-content class="mat-typography modal-width">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="form-horizontal">
+            <div class="form-group m-3">
+                <label class="col-md-6 control-label mb-1" for="taskTitle">
+                    Titulo para tarefa
+                </label>
+                <div class="col-md-12">
+                    <input class="form-control" id="taskTitle" type="text" placeholder="Titulo para tarefa"/>
+                </div>
+            </div>
+            <div class="form-group m-3">
+                <label class="col-md-6 control-label mb-1" for="shortDesc">
+                    Breve descrição para a etapa
+                </label>
+                <div class="col-md-12">
+                    <input class="form-control" id="shortDesc" type="text"/>
+                </div>
+            </div>
+            <div class="form-group m-3">
+                <label class="col-md-6 control-label mb-1" for="fullDesc">
+                    Descrição completa da etapa                
+                </label>
+                <div class="col-md-12">
+                    <input class="form-control" id="fullDesc" type="text"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>

@@ -1,4 +1,4 @@
-<h2 mat-dialog-title>Install Angular</h2>
+<h2 mat-dialog-title>Task Title</h2>
 <mat-dialog-content class="mat-typography modal-width">
     <div class="col-lg-12 col-md-12 col-sm-12 default-width mb-2" *ngFor="let item of items">
         <mat-accordion>
@@ -6,21 +6,25 @@
                                  (closed)="panelOpenState = false">
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                    Self aware panel
+                    Etapa Title
                     </mat-panel-title>
                     <mat-panel-description>
-                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    Description if exist --commit text
                     </mat-panel-description>
                 </mat-expansion-panel-header>
-              <p>I'm visible because I am open</p>
+                <div>
+                    <p>
+                        Yes I am a content
+                    </p>
+                </div>
             </mat-expansion-panel>
         </mat-accordion>
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12">
-        <button type="button" class="btn btn-primary">Adicionar etapa</button>
+        <button type="button" class="btn btn-primary" (click)="addNewStepTask()">Adicionar etapa</button>
     </div>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
     <button mat-button mat-dialog-close>Cancel</button>
-    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Salvar</button>
 </mat-dialog-actions>

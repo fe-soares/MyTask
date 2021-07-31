@@ -1,4 +1,6 @@
 import { Component, ViewEncapsulation } from "@angular/core";
+import { MatDialog } from "@angular/material/dialog";
+import { NewTaskComponent } from "../components/partials/new-task/new-task.component";
 
 @Component({
     selector: 'task-dashboard',
@@ -7,6 +9,14 @@ import { Component, ViewEncapsulation } from "@angular/core";
     encapsulation: ViewEncapsulation.None
 })
 export class TaskDashboardComponent{
-    constructor(){
+    constructor(public dialog: MatDialog){
+    }
+
+    includeNewTask(){
+        const dialogRef = this.dialog.open(NewTaskComponent, { disableClose: true });
+  
+        dialogRef.afterClosed().subscribe(result => {
+          console.log(`Dialog result: ${result}`);
+        });
     }
 }
