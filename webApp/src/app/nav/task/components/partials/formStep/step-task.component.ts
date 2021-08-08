@@ -8,6 +8,10 @@ export class StepTaskComponent{
     constructor(
 
     ){}
+
+    saveStep(){
+        return {id: 1};
+    }
+
     panelOpenState: boolean = false;
-    items:{id:number}[] = [{id: 1}];
 }

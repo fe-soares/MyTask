@@ -11,13 +11,19 @@ export class NewTaskComponent{
         public dialog: MatDialog
     ){}
 
+    panelOpenState: boolean = false;
+    items:{id:number}[] = [{id: 1}];
+
     addNewStepTask(){
         const dialogRef = this.dialog.open(StepTaskComponent, { disableClose: true });
   
         dialogRef.afterClosed().subscribe(result => {
-          console.log(`Dialog result: ${result}`);
+            this.items.push(result);
         });
     }
-    panelOpenState: boolean = false;
-    items:{id:number}[] = [{id: 1}];
+
+    createNewTask(){
+        let newTask: any = {};
+        return newTask;
+    }
 }

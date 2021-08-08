@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using AutoMapper;
 
 namespace ApiMyTask
 {
@@ -34,7 +35,9 @@ namespace ApiMyTask
             });
 
             services.AddIdentityConfiguration(Configuration);
-              
+
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddControllers();
 
             services.ResolveDependencies();

@@ -1,7 +1,6 @@
 ﻿using Dev.Business.Models.enums;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Dev.Business.Models
@@ -13,9 +12,6 @@ namespace Dev.Business.Models
         public DateTime StratDate { get; set; }
         public DateTime EndDate { get; set; }
         public TaskStatus Status { get; set; }
-
-        [MaxLength(16777215)]
-        public byte[] Content { get; set; }
-        //Para o Map AddColumn("dbo.testDB", "Content", c => c.Binary(storeType: "tinyblob"));
+        public IEnumerable<TaskContext> TaskContext { get; set; }
     }
 }
