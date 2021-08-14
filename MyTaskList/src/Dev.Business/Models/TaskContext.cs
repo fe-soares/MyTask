@@ -14,6 +14,8 @@ namespace Dev.Business.Models
 
         public string ContextStep { get; set; }
 
+        public string ShortDescriptionStep { get; set; }
+
         public StatusStep Status { get; set; }
     }
 }
