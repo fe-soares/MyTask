@@ -1,0 +1,7 @@
+Instalação projeto Webapp Linux
+    ter instalado o node versão superior a 12
+    ter instalado o npm
+    instalação do angular cli: sudo npm install -g @angular/cli@11.1.4
+    instalação do dev-kit do angular: sudo npm install --save-dev @angular-devkit/build-angular
+    adicionar configuração no arquivo tsconfig.json dentro do "angularCompilerOptions": "enableIvy": false
+
